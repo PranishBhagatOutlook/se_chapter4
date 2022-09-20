@@ -1,8 +1,6 @@
 package com.example.macbookstore.web;
 import javax.validation.Valid;
-
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,9 +11,10 @@ import org.springframework.web.bind.support.SessionStatus;
 import com.example.macbookstore.Order;
 import com.example.macbookstore.data.OrderRepository;
 
+
 @Controller
 @RequestMapping("/orders")
-@SessionAttributes("tacoOrder")
+@SessionAttributes("order")
 public class OrderController {
 
     private OrderRepository orderRepo;
@@ -37,6 +36,7 @@ public class OrderController {
 
         orderRepo.save(order);
         sessionStatus.setComplete();
+
 
         return "redirect:/";
     }

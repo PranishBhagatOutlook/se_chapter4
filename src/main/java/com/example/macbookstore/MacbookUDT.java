@@ -5,7 +5,7 @@ import org.springframework.data.cassandra.core.mapping.UserDefinedType;
 import lombok.Data;
 
 @Data
-@UserDefinedType("taco")
+@UserDefinedType("macbooks")
 public class MacbookUDT {
 
     private final String name;

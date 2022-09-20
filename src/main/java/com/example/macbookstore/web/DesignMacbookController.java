@@ -24,7 +24,7 @@ import com.example.macbookstore.data.IngredientRepository;
 
 @Controller
 @RequestMapping("/design")
-@SessionAttributes("macbookOrder")
+@SessionAttributes("order")
 public class DesignMacbookController {
 
     private final IngredientRepository ingredientRepo;
@@ -47,7 +47,7 @@ public class DesignMacbookController {
         }
     }
 
-    @ModelAttribute(name = "macbookOrder")
+    @ModelAttribute(name = "order")
     public Order order() {
         return new Order();
     }

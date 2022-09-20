@@ -10,11 +10,11 @@
 <h1>Design your macbook!</h1>
 <img th:src="@{/images/img.png}"/>
 
-<form method="POST" th:object="${design}">
+<form method="POST" th:object="${macbook}">
 
-    <span class="validationError"
-          th:if="${#fields.hasErrors('ingredients')}"
-          th:errors="*{ingredients}">Ingredient Error</span>
+<!--    <span class="validationError"-->
+<!--          th:if="${#fields.hasErrors('ingredients')}"-->
+<!--          th:errors="*{ingredients}">Ingredient Error</span>-->
 
     <div class="grid">
         <div class="ingredient-group" id="screen">

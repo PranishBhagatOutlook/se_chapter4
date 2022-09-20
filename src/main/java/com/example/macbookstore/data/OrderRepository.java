@@ -7,6 +7,6 @@ import org.springframework.data.repository.CrudRepository;
 import com.example.macbookstore.Order;
 
 public interface OrderRepository
-        extends CrudRepository<Order, UUID> {
+        extends CrudRepository<Order, String> {
 
 }
